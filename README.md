@@ -15,7 +15,7 @@ This project involves creating a fire detection system using a flame sensor, an 
 
 | Arduino Nano Pin | Component         |
 | ---------------- | ----------------- |
-| A0               | Flame Sensor OUT  |
+| D7               | Flame Sensor OUT  |
 | SDA (A4)         | OLED SDA          |
 | SCL (A5)         | OLED SCL          |
 | GND              | Flame Sensor GND, OLED GND |
@@ -24,7 +24,7 @@ This project involves creating a fire detection system using a flame sensor, an 
 ## Step-by-Step Instructions
 
 ### 1. Wiring the Components
-1. Connect the **flame sensor** output pin to analog input `A0` of the **Arduino Nano**.
+1. Connect the **flame sensor** output pin to analog input `D7` of the **Arduino Nano**.
 2. Connect the **OLED display** using the I2C pins:
    - `SDA` to `A4`
    - `SCL` to `A5`
@@ -37,8 +37,7 @@ This project involves creating a fire detection system using a flame sensor, an 
 ### 3. Upload the Code
 1. Connect the **Arduino Nano** to your computer via USB.
 2. Open the Arduino IDE and copy the following code
-3. Adjust the flame sensor threshold value in the code (`flameValue < 200`) as per your requirements.
-4. Compile and upload the code to the **Arduino Nano**.
+3. Compile and upload the code to the **Arduino Nano**.
 
 ### 4. Testing the System
 1. Power on the system.
